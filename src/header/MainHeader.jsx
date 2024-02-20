@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 export default function MainHeader() {
   const [currentDate, setCurrentDate] = useState('');
 
@@ -11,12 +12,16 @@ export default function MainHeader() {
     const formattedDate = `${year}-${month}-${day}`;
     setCurrentDate(formattedDate);
   }, []);
+  // FIXME 해당 요소 수정...
 
   return (
-    <div className="flex flex-row bg-green-200 w-full h-[10%] px-4">
+    <div className="flex flex-row border-b border-gray-200 w-full h-[10%] p-2">
+      <div className='flex flex-row justify-center w-1/5'>
+        <img src="/logossafy.png" alt="empty image" className='h-full' />
+      </div>
       <div className="w-1/5 flex flex-row items-center p-1 gap-2">
         <div>날짜</div>
-        <input className="w-3/4 text-center" type="date" id="date" value={currentDate} />
+        <input className="w-3/4 text-center" type="date" id="date" defaultValue={currentDate} />
       </div>
     </div>
   );
