@@ -14,12 +14,9 @@ export default function MainHeader() {
 
   return (
     <div className="flex flex-row bg-green-200 w-full h-[10%] px-4">
-      <div className="w-1/6 flex flex-row items-center p-1 gap-2">
+      <div className="w-1/5 flex flex-row items-center p-1 gap-2">
         <div>날짜</div>
         <input className="w-3/4 text-center" type="date" id="date" value={currentDate} />
-      </div>
-      <div className="w-1/6 flex items-center p-1">
-        아아
       </div>
     </div>
   );
