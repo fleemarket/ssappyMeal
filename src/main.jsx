@@ -31,9 +31,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  // {
-  //   basename: "/app",
-  // }
+
 );
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(

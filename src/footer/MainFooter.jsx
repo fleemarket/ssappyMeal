@@ -3,6 +3,7 @@ export default function MainFooter() {
     <div className="flex flex-row w-full h-1/3">
       <div className="flex w-1/4 h-full"></div>
       <div className="flex flex-col w-1/2 h-full">
+        <div className="flex w-full h-1/2 justify-center mb-2">SSAFY 대전 캠퍼스의 식단표를 제공하는 사이트 입니다.</div>
         <div className="flex flex-row w-full h-1/2 justify-center gap-3">
           <a href="https://github.com/fleemarket/ssappyMeal" className="font-semibold hover:text-gray-500">깃허브 repository</a>
           <div>|</div>
