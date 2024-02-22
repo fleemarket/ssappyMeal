@@ -14,7 +14,7 @@ export default function MainHeader({ day }) {
   const today_day = day_indicator_KR[day];
 
   return (
-    <div className="flex flex-row border-b border-gray-400 w-full h-[10%] p-2">
+    <div className="flex flex-row bg-gray-200 w-full h-[10%] p-2">
       <div className="flex flex-row justify-center w-1/5">
         <a href="https://edu.ssafy.com/">
           <img src="/logossafy.png" alt="empty image" className="h-full" />
