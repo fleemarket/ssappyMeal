@@ -9,12 +9,13 @@ const which_day = new Date().getDay();
 
 export default function MealBody() {
   
-  const {days, setDays} = useSelectStore();
+  // const {days, setDays} = useSelectStore();
 
   return (
     <>
       <div className="flex justify-center w-full h-[10%]">
-        <RadioButton days={days} setDays={setDays} />
+        {/* <RadioButton days={days} setDays={setDays} /> */}
+        {/* TODO 요일선택 추후 제공 */}
       </div>
       <div className="flex flex-row w-full h-3/5 p-3 justify-center">
         <div className="flex w-1/6 m-3">
