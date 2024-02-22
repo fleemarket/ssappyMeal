@@ -1,3 +1,5 @@
+import useSelectStore from "@/store/useSelectStore";
+
 import mealJson from "@/json/meal.json";
 import { Badge } from "./ui/badge";
 import { RadioButton } from "./RadioButton";
@@ -6,11 +8,12 @@ const which_day = new Date().getDay();
 
 export default function MealBody() {
 
+  const {days, setDays} = useSelectStore();
 
   return (
     <>
       <div className="flex justify-center w-full h-[10%]">
-        <RadioButton />
+        <RadioButton days={days} setDays={setDays} />
       </div>
       <div className="flex flex-row w-full h-3/5 p-3 justify-center">
         <div className="flex w-1/6 m-3">

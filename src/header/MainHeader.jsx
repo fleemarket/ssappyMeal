@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
-
 export default function MainHeader({ day }) {
   
 
@@ -28,8 +26,6 @@ export default function MainHeader({ day }) {
         <div className="w-2/5 flex text-xl m-3 items-center">오늘은... {today_day}
         {day > 4 ? <div className=" flex text-red-500 font-semibold m-3 items-center"> 금요일! 남은 하루 화이팅!</div> : null}
         </div>
-        {/* <RadioButton day={selectedDay} /> */}
-        {/* TODO 라디오버튼 선택에서 주차별 메뉴 선택해서 열리게끔. 라디오 버튼 컴포에서 상태관리가 되게끔? */}
       </div>
     </div>
   );
