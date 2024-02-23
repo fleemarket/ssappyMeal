@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useState } from "react"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
@@ -8,6 +9,11 @@ export function RadioButton({days, setDays}) {
 
   const today_day = day_indicator[days]
   console.log(today_day)
+
+  useEffect(() => {
+    console.log(days)
+  },[days])
+
 
   return (
     <RadioGroup defaultValue={today_day} className="flex flex-row">
