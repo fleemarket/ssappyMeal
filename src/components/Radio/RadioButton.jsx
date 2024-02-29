@@ -15,8 +15,6 @@ export default function RadioButton({ days, setDays }) {
   ];
 
   const today_day = day_indicator[days];
-  
-  console.log(today_day);
 
   return (
     <div>
